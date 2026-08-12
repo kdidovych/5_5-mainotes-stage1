@@ -1,13 +1,30 @@
-import {Link} from "react-router";
 import {useTranslation} from "react-i18next";
+import {Link} from "react-router";
+import ReactPlayer from 'react-player';
 
 function Landing() {
     const {t} = useTranslation();
     return (
         <>
-            <h1 style={{textTransform: "upperCase", textAlign: "center"}}>
-                <Link to={'notes'}>{t('notes')}</Link>
+            <h1 style={{textAlign: "center"}}>
+                main page: <Link to={'notes'} style={{textTransform: "upperCase"}}>{t('notes')}</Link>
             </h1>
+
+            <div style={{padding: '20px', maxWidth: '800px', margin: '0 auto'}}>
+                <h2>React Player</h2>
+                <div style={{position: 'relative', paddingTop: '56.25%'}}>
+                    <ReactPlayer
+                        src={"https://www.youtube.com/watch?v=6CJUQr4Vs40"}
+                        controls={true}
+                        playing={false}
+                        width="100%"
+                        height="100%"
+                        style={{position: 'absolute', top: 0, left: 0}}
+                        onError={(e) => console.log('Error playing media:', e)}
+                    />
+                </div>
+            </div>
+
             <ul>
                 <div style={{color: "red"}}>@TODO:</div>
                 <li>
