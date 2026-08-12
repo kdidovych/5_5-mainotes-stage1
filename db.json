@@ -1,0 +1,29 @@
+{
+  "notes": [
+    {
+      "id": "wmqoroMUjVY",
+      "userId": 0,
+      "title": "note 1",
+      "content": "Lorem ipsum dolor sit amet",
+      "createdAt": null,
+      "updatedAt": null
+    },
+    {
+      "id": "DYpcnlEDggU",
+      "userId": 0,
+      "title": "Other note 2",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur dicta doloribus earum, et explicabo iste iure molestias nihil numquam odit omnis placeat quas reiciendis sint tempora, velit veritatis voluptatum.",
+      "createdAt": 1786530713013,
+      "updatedAt": 1786530713013
+    },
+    {
+      "id": "DYpcnlEDggE",
+      "userId": 0,
+      "title": "Third note (3)",
+      "content": "Custom note text... No image for now (",
+      "createdAt": 1786530713013,
+      "updatedAt": 1786530713013
+    }
+  ],
+  "$schema": "./db-json-server-schema.json"
+}

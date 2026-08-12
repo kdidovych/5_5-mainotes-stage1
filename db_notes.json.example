@@ -1,0 +1,13 @@
+{
+  "notes": [
+    {
+      "id": '123sda23sdf',
+      'userId': "1",
+      'title': 'Note 1',
+      'content': 'some text of note 1',
+      'createdAt': '2021-01-01',
+      'updatedAt': '2021-01-01'
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

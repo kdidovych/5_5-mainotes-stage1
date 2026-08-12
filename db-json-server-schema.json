@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "userId": { "type": "string" },
+          "title": { "type": "string" },
+          "content": { "type": "string", "format": "email" },
+          "createdAt": { "type": "string", "format": "string" }, // @TODO on BE make "date-time" 2026-08-12T13:41:29Z
+          "updatedAt": { "type": "string", "format": "string" }
+        },
+        "required": ["id", "userId"],
+        "additionalProperties": false
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": ["notes"],
+  "additionalProperties": false
+}
